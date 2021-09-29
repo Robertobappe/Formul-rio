@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="" >
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro covid</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+        
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" nome="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required >
+        </div>
+
+        <div id="check">
+            <label for="doses"><strong>Quantas doses da vacina você tomou?</strong></label>
+            <label>
+                <input type="radio" nome="devweb" value="uma">uma
+            </label>
+            <label>
+                <input type="radio" nome="devweb" value="duas">duas
+            </label>
+            <label>
+                <input type="radio" nome="devweb" value="três">três
+            </label>
+        </div>
+
+        <div>
+            <label><strong>Qual vacina você tomou?</strong></label>
+            <select id="vacina">
+                <option selected disabled value="">Selecione</option>
+                <option>CoronaVac</option>
+                <option>Pfizer</option>
+                <option>Johnson & Johnson</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div>
+                <label><strong>Selecione o período em que deseja tomar a vacina:</strong></label><br><br>
+                <input type="checkbox" id="periodo1" name="periodo1" value="Manhã">
+                <label for="periodo1">Manhã</label>
+                <input type="checkbox" id="periodo2" name="periodo2" value="Tarde">
+                <label for="período2">Tarde</label>
+                <input type="checkbox" id="periodo3" name="periodo3" value="Noite">
+                <label for="periodo3">Noite</label>
+            </div>
+        </fieldset>
+        </div>
+
+        <div>
+            <br>
+            <label><strong>Conte um pouco como esta o tempo de espera para tomar a vacina na sua região:</strong></label><br>
+            <textarea rows="6" style="width: 26em" id="tempo" name="tempo"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>
